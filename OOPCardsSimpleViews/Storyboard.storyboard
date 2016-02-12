@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5Nb-VI-X55">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5Nb-VI-X55">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--Card Switcher View Controller-->
@@ -16,13 +16,73 @@
                     <view key="view" contentMode="scaleToFill" id="RVc-yB-jf9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="!N" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1f-r7-W5Z">
+                                <rect key="frame" x="20" y="28" width="42" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="topLabel"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="!N" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wy6-Yy-0ll">
+                                <rect key="frame" x="314" y="577" width="41" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="bottomLabel"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1J-am-GuL">
+                                <rect key="frame" x="28" y="629" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="threeOfSpadesButton"/>
+                                <state key="normal" title="♠️3"/>
+                                <connections>
+                                    <action selector="chooseThreeOfSpades" destination="5Nb-VI-X55" eventType="touchUpInside" id="Umn-bc-XCf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o38-QX-DXs">
+                                <rect key="frame" x="121" y="629" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="fourOfClubsButton"/>
+                                <state key="normal" title="♣️4"/>
+                                <connections>
+                                    <action selector="chooseFourOfClubs" destination="5Nb-VI-X55" eventType="touchUpInside" id="Ux1-gm-HJ3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiD-I0-bXH">
+                                <rect key="frame" x="219" y="629" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="eightOfDiamondsButton"/>
+                                <state key="normal" title="♦️8"/>
+                                <connections>
+                                    <action selector="chooseEightOfDiamonds" destination="5Nb-VI-X55" eventType="touchUpInside" id="p8W-lg-LZ0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9l-TT-cld">
+                                <rect key="frame" x="314" y="629" width="36" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="tenOfHeartsButton"/>
+                                <state key="normal" title="♥️10"/>
+                                <connections>
+                                    <action selector="chooseTenOfHearts" destination="5Nb-VI-X55" eventType="touchUpInside" id="E1K-z8-8ew"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="!N" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SF-nQ-AII">
+                                <rect key="frame" x="138" y="293" width="92" height="40"/>
+                                <accessibility key="accessibilityConfiguration" label="middleLabel"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bottomLabel" destination="wy6-Yy-0ll" id="5hr-oS-rPd"/>
+                        <outlet property="middleLabel" destination="5SF-nQ-AII" id="V9b-3f-zbx"/>
+                        <outlet property="topLabel" destination="Z1f-r7-W5Z" id="Rhg-xO-XaT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kua-Xw-qOx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="242.8125" y="35.387323943661968"/>
+            <point key="canvasLocation" x="242.5" y="34.5"/>
         </scene>
     </scenes>
 </document>
