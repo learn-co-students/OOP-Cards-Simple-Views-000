@@ -22,4 +22,28 @@
                                                 rank:@"10"];
 }
 
+- (IBAction)chooseThreeOfSpades {
+    [self setAllLabelsToText:self.threeOfSpades.description];
+}
+
+- (IBAction)chooseFourOfClubs {
+    [self setAllLabelsToText:self.fourOfClubs.description];
+}
+
+- (IBAction)chooseEightOfDiamonds {
+    [self setAllLabelsToText:self.eightOfDiamonds.description];
+}
+
+- (IBAction)chooseTenOfHearts {
+    [self setAllLabelsToText:self.tenOfHearts.description];
+}
+
+- (void)setAllLabelsToText:(NSString *)text {
+    self.topLabel.text = text;
+    self.middleLabel.text = text;
+    self.bottomLabel.text = text;
+}
+
+
+
 @end
