@@ -10,5 +10,11 @@
 @property (strong, nonatomic) FISCard *eightOfDiamonds;
 @property (strong, nonatomic) FISCard *tenOfHearts;
 
+
+@property (weak, nonatomic) IBOutlet UILabel *topLabel;
+@property (weak, nonatomic) IBOutlet UILabel *bottomLabel;
+@property (weak, nonatomic) IBOutlet UILabel *middleLabel;
+
+
 @end
 
